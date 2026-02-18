@@ -1,0 +1,23 @@
+You have access to a documentation repository that defines coding standards, architecture patterns, and processes. Use this tree to decide which docs to read based on the current task.
+
+## Docs Tree
+
+```
+docs/
+├── standards/
+│   ├── coding-principles.md      # Core principles: naming, DRY, error handling
+│   ├── typescript.md             # TypeScript conventions and strict mode patterns
+│   └── prisma.md                 # Prisma ORM: schema design, queries, relations, migrations
+├── architecture/
+│   ├── react-components.md       # Client vs server, composition, props, state
+│   └── server-actions.md         # Validation, error handling, revalidation
+└── process/
+    └── documentation.md          # How to write and maintain documentation
+```
+
+## How to Use These Docs
+
+1. Read this tree to understand what's available.
+2. Based on the current task, read the relevant doc(s) for detailed guidance.
+3. If a task spans multiple concerns (e.g., a Prisma query inside a Server Action), read all applicable docs.
+4. When in doubt, read `docs/standards/coding-principles.md` — it applies to everything.

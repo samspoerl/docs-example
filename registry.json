@@ -1,0 +1,41 @@
+{
+  "baseUrl": "https://raw.githubusercontent.com/samspoerl/docs-example/main",
+  "docs": [
+    {
+      "name": "react-components",
+      "description": "React component architecture patterns",
+      "category": "architecture",
+      "files": ["docs/architecture/react-components.md"]
+    },
+    {
+      "name": "server-actions",
+      "description": "Server action architecture patterns",
+      "category": "architecture",
+      "files": ["docs/architecture/server-actions.md"]
+    },
+    {
+      "name": "documentation",
+      "description": "Documentation process and structure",
+      "category": "process",
+      "files": ["docs/process/documentation.md"]
+    },
+    {
+      "name": "coding-principles",
+      "description": "Core coding principles",
+      "category": "standards",
+      "files": ["docs/standards/coding-principles.md"]
+    },
+    {
+      "name": "prisma",
+      "description": "Prisma standards and patterns",
+      "category": "standards",
+      "files": ["docs/standards/prisma.md"]
+    },
+    {
+      "name": "typescript",
+      "description": "TypeScript standards and conventions",
+      "category": "standards",
+      "files": ["docs/standards/typescript.md"]
+    }
+  ]
+}
