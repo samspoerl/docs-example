@@ -1,6 +1,6 @@
-# docs
+# docs-example
 
-A central, version-controlled repository of documentation and AI context. Standards, architecture decisions, and process docs that can be imported into any project to provide context to AI coding assistants.
+Example docs registry used with the [**docs-cli**](https://github.com/samspoerl/docs-cli). This repo shows how to structure a docs registry and AI context so the CLI can pull it into projects.
 
 ## How It Works
 
@@ -47,18 +47,20 @@ The AI context files **reference** docs rather than duplicating them. Example: a
 
 ## Companion CLI
 
-A separate project (not this repo) provides a CLI to fetch docs into any project. Think shadcn's CLI model:
+The [docs-cli](https://github.com/samspoerl/docs-cli) fetches docs from this registry and writes them into a target project, similar to shadcn's CLI model:
 
 - `docs add typescript prisma` — Cherry-pick specific docs
-- `docs add standards/` — Pull an entire category
+- `docs add standards` — Pull an entire category
 - Auto-detects IDE and routes AI context files to the correct location
 
-The CLI always fetches latest from main. No versioning complexity.
+The CLI always fetches the latest from `main`. No versioning complexity.
+
+> Note: If the docs repo is private, you need a GitHub PAT with content read access.
 
 ## Project Status
 
-Early discovery and experimentation. The structure is being validated before building the CLI.
+Early discovery and experimentation. The final structure may change.
 
 ### Parked / Exploratory
 
-The `ai/skills/` and `ai/mcp/` folders are exploratory. Skills and MCP configs may be better installed directly from their source tools rather than maintained here. Not part of the core design.
+Exploring if/how to integrate parts of the agentic IDE stack (e.g., agents, skills, MCP, etc.). Skills and MCP configs may be better installed directly from their source tools rather than maintained here.
