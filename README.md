@@ -49,8 +49,8 @@ The AI context files **reference** docs rather than duplicating them. Example: a
 
 A separate project (not this repo) provides a CLI to fetch docs into any project. Think shadcn's CLI model:
 
-- `docs fetch typescript prisma` — Cherry-pick specific docs
-- `docs fetch standards/` — Pull an entire category
+- `docs add typescript prisma` — Cherry-pick specific docs
+- `docs add standards/` — Pull an entire category
 - Auto-detects IDE and routes AI context files to the correct location
 
 The CLI always fetches latest from main. No versioning complexity.
